@@ -2,38 +2,12 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-
-int main()
-{
-	int NB,Un1,Un2,i,Un;
+int main() {
 	
-	
-	printf("Entrez un nombre entier :\n");
-	scanf("%d",&NB);
-	
-	Un1=Un2=1;
-	
-	for(i=0;i<NB;i++)
-	{
-	    
-		if(i<=1)
-		{
-			Un = i;	
-		}
-		else
-		{
-			Un = Un1 + Un2;
-			Un1 = Un2;
-			Un2 = Un;
-		}
-		
-		printf("%d \n",Un);
-		
-		
-	
-
-	}
-		return 0;
+   int a,b;
+   printf("Entrez les 2 numero \n");
+   scanf("%d%d",&a,&b);
+   printf("le resultat est :\n a+b=%d\na-b=%d\na*b=%d\na/b=%d\na%b=%d",a+b,a-b,a*b,a/b,a%b);
+   return 0; 
 }
-
 	
